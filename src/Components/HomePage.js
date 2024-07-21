@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import NavBar from "./NavBar";
 import { initialState, ValuesReducer } from "./Reducer";
 
@@ -9,6 +9,12 @@ function HomePage(){
     const [male,setMale]=useState(false)
     const [female,setFemale]=useState(false)
     const [values,dispatch]=useReducer(ValuesReducer,initialState)
+
+    useEffect(()=>{
+        if(gender !== ""){
+            alert("changing gender may change content below")
+        }
+    },[gender])
 
     function updateObject(){
         fruitsObject={...fruitsObject,"weight":"1kg"}

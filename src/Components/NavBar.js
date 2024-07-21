@@ -1,7 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar(){
+    console.log("navbar is getting called");
     return(
         <div style={{display:"flex",justifyContent:"space-evenly",alignItems:"center",backgroundColor:"grey",height:"10vh"}}>
             <Link to="/">Main</Link>
@@ -14,4 +15,4 @@ function NavBar(){
 }
 
 
-export default NavBar;
+export default memo(NavBar);
