@@ -4,6 +4,7 @@ import { FaFacebook ,FaInstagram} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function ContactPage(){
+
     return(
         <div>
             <NavBar/>

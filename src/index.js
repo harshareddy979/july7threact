@@ -12,6 +12,7 @@ import ReactHooks from './Components/UseEffectAndUseRef';
 import UseContext from './Components/UseContext';
 import ApiCalls from './Components/apiCalls';
 import UseMemo from './Components/UseMemo';
+import FirstClassComponent from './Components/classComponents';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
          <Route path='/context' element={<UseContext />}></Route>
          <Route path='/apiCalls' element={<ApiCalls />}></Route>
          <Route path='/useMemo' element={<UseMemo />}></Route>
+         <Route path='/class' element={<FirstClassComponent />}></Route>
       </Routes>
    </BrowserRouter>
 
